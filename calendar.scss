@@ -1,0 +1,86 @@
+.Calendar {
+
+  table {
+    width: 1000px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  }
+
+  //name of days
+  .dayNames {
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #dddddd;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+  }
+
+  .header {
+    border-bottom: none;
+  }
+
+  //td's in calendar
+  .dayBlank {
+    height: 95px;
+    width: 14.28%;
+    text-align: right;
+    vertical-align: text-bottom;
+    border: 1px solid #bbb;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+
+  //reading items
+  .data-result {
+    text-align: center;
+    font-size: .8em;
+    margin: 5px;
+    padding: 0;
+    vertical-align: text-bottom;
+    display: block;
+  }
+
+  .data-result:hover{
+    cursor: pointer;
+    background-color: #006faa;
+    color: #ffffff;
+  }
+
+  .data-result-all {
+    vertical-align: text-bottom;
+  }
+
+  //header with month
+  .currentMonth {
+    display: inline;
+    padding-right: 450px;
+    font-size: 1.3em;
+  }
+
+  //today and chevron buttons
+  button{
+    font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
+    display: inline;
+    font-size: .7em;
+    font-weight: lighter;
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+    color: #555;
+  }
+
+  .button {
+      color: #006faa;
+  }
+
+  .btngroup {
+    float: right;
+  }
+
+  .todayHighLight {
+    background-color: #c8ecff;
+  }
+}

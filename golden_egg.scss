@@ -1,0 +1,97 @@
+@import '../global/wr_styles_mixins';
+
+
+.goldenEggOutofModal {
+        animation: shake 3s infinite;
+        cursor: pointer;
+        width: 40px;
+        height: auto;
+        border-opacity:1.0;
+
+        @-webkit-keyframes shake {
+            animation: shake 3s infinite;
+            width: 40px;
+            height: 40px;
+            0%, 100% {-webkit-transform: translateX(0);}
+            10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-3px);}
+            20%, 40%, 60%, 80% {-webkit-transform: translateX(3px);}
+            -webkit-animation-fill-mode: forwards;
+        }
+}
+
+
+.eggModal {
+    min-width: 100px;
+    min-height: 100px;
+
+
+    .patchDescription{
+        font-size: 1em;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .goldenEggInsideModal{
+        width: auto;
+        height: auto;
+        position: relative;
+        text-align: center;
+        margin-top: -20px;
+
+        &.closed {
+            animation: shake .5s infinite;            
+        }
+    }
+
+    .eggContainer{
+        text-align: center;
+    }
+
+    .coinAmount{
+        text-align: center;
+        margin-top: auto;
+        font-weight: normal;
+    }
+
+    .patchName{
+        font-size:1.4em;
+        text-align: center;
+    }
+    .wrModalHeader{
+        font-size: 1.6em;
+    }
+
+    .awardImage{
+        text-align: center;
+        -webkit-animation: jump 2s ease-out;
+        animation: jump 2s ease-out;
+    }
+
+    @-webkit-keyframes jump {
+        0% {
+          transform: translateY(300px);
+        }
+
+        100% {
+          transform: translateY(0px);
+        }
+    }
+
+    .awardsCoin{
+
+        text-align: center;
+        cursor: pointer;
+        font-weight: 1.0em;
+    }
+
+    .awardsPatch{
+        text-align: center;
+        position: relative;
+    }
+
+    .patchName, .coinAmount ,.patchDescription, .awardImage {
+        font-weight: normal;
+        // display: block;
+    }
+
+}
